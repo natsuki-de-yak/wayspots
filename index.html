@@ -1529,12 +1529,12 @@ ul>li:not(:nth-child(1)):before {
 
             //クリックした時にWayspotの情報を表示
             map.on('click', 'csvData', function (e) {
-              var catefory = [e.features[0].properties.category1, e.features[0].properties.category2]
+              //var catefory = [e.features[0].properties.category1, e.features[0].properties.category2]
               var bgCode = ['#fff', '#fff'];
               var fcCode = ['#fff', '#fff'];
               var bg, fc, bgL, fcL;
 
-              //カテゴリーの色を決める部分
+              /* カテゴリーの色を決める部分
               for (var i = 0; i < 2; i++) {
                 bg = crc32(catefory[i]);
                 fc = [~bg[0] & 0xff, ~bg[1] & 0xff, ~bg[2] & 0xff, ];
@@ -1545,7 +1545,7 @@ ul>li:not(:nth-child(1)):before {
                 }
                 bgCode[i] = toColorCode(bg);
                 fcCode[i] = toColorCode(fc);
-              }
+              } */
 
               //coordinates … 座標
               //description … HTML
